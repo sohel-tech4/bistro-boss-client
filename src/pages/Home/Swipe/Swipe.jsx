@@ -1,5 +1,3 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -16,10 +14,16 @@ import slide5 from "../../../assets/slide5.jpg";
 import slide6 from "../../../assets/slide1.jpg";
 import slide7 from "../../../assets/slide2.jpg";
 import slide8 from "../../../assets/slide3.jpg";
+import TagItem from "../../../Components/TagItem";
 
 const Swipe = () => {
   return (
-    <Swiper
+    <div>
+      <TagItem SubTitle={"From 11:00 am to 10:00 pm"}
+      Title={"Order Online"}>
+
+      </TagItem>
+      <Swiper
       breakpoints={{
         0: {
           slidesPerView: 2,
@@ -74,6 +78,7 @@ const Swipe = () => {
         <h1 className="text-center relative mt-80 uppercase font-bold">soup</h1>
       </SwiperSlide>
     </Swiper>
+    </div>
   );
 };
 
