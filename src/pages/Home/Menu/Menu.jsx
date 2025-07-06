@@ -22,7 +22,7 @@ const Menu = () => {
             >
 
             </TagItem>
-            <div className='grid grid-cols-2 gap-5'>
+            <div className='md:grid grid-cols-2 p-5 gap-5'>
                 {
                     Menu.map(Item => <MenuItem 
                     key={Item._id}
